@@ -7,7 +7,6 @@ on:
       - dev/*
       - feature/*
       - hotfix/*
-
 jobs:
   version-matrix:
     strategy:
@@ -23,4 +22,6 @@ jobs:
         tag:  v0.0.1
         environment: QA              
     secrets: inherit
-	  
+
+
+    
