@@ -24,7 +24,7 @@ jobs:
         with:
           registry: ghcr.io
           username: ${{ secrets.GH_REPO_OWNER }}
-          password: ${{ secrets.GH_TOKEN }}
+          password: ${{ secrets.GITHUB_TOKEN }}
 
       # Verificar la rama actual
       - uses: actions/checkout@v3
@@ -35,7 +35,7 @@ jobs:
         with: 
           tag: ${{ inputs.tag }}
         env:
-          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name:  Cancelar lanzamiento
         if: steps.checkTag.outputs.exists == 'true'
