@@ -1,6 +1,6 @@
 name: Create Release
 on:
-  workflow_dispatch:
+  workflow_call:
     inputs:
       tag:
         description: 'Etiqueta con la que crear la versión'
