@@ -81,4 +81,4 @@ jobs:
           body: ${{ steps.Changelog.outputs.changelog }}
           draft: false
           prerelease: ${{ inputs.pre-release }}
-          GITHUB_TOKEN: ${{ secrets.CREATE_RELEASE_PAT }}
+          token: ${{ secrets.CREATE_RELEASE_PAT }}
