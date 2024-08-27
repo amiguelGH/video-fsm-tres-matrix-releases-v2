@@ -20,7 +20,8 @@ jobs:
     uses: amiguelGH/video-fsm-tres-matrix-releases-v2/.github/workflows/semantic-release.yaml@main
     with:
         tag:  v0.0.1
-        environment: QA              
+        pre-release: prueba
+        create-branch: QA
     secrets: inherit
 
 
